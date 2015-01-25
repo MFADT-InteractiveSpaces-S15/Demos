@@ -64,7 +64,7 @@ function onBooleanMessage( name, value){
 	window.clearInterval(interval);
 	window.clearTimeout(timeout);
 	if ( value == true ){
-		document.getElementById("container").innerHTML = "";
+		document.getElementById("output").innerHTML = "";
 
 		timeout = setTimeout( function(){
 			interval = setInterval(flipBackground, 200);
@@ -90,7 +90,8 @@ function onCustomMessage( routeName, value ){
 		window.clearTimeout(timeout);
 	}
 	t = window.setTimeout( function(){
-		document.getElementById("container").innerHTML = "<strong>GROUP " + value[name].group + "</strong><br/>"+ value[name].place;
+		document.getElementById("output").innerHTML = "<strong>GROUP " + value[name].group + "</strong><br/>"+ value[name].place;
+		document.getElementById("output").style.top = window.innerHeight / 2. - document.getElementById("output").innerHeight / 2. +"px";
 	}, 500);
 }
 
@@ -101,6 +102,7 @@ window.onload = function(){
 window.onresize = function(){
 	document.getElementById("input").style.fontSize = window.innerWidth/10 +"px";
 	document.getElementById("container").style.fontSize = window.innerWidth/10 +"px";
+	document.getElementById("output").style.top = window.innerHeight / 2. - document.getElementById("output").innerHeight / 2. +"px";
 }
 
 

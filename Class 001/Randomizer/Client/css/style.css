@@ -25,7 +25,7 @@ body {
 
 #container {
 	color:#FFF;
-	font-size: 100px;
+	font-size: 50px;
 }
 
 .center{left:25%;width:50%;height:50%;top:25%;background:#f0f;position:absolute;text-align:center;}
@@ -41,6 +41,11 @@ input {
 	align-items: center;
 	align-content: center;
 	text-align: center;
+}
+
+#output {
+	position: absolute;
+	padding: 80px;
 }
 
 /* BUTTON */
