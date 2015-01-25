@@ -8,7 +8,7 @@ function setup (){
 	app_name = app_name + ' ' + random_id.substring(random_id.length-4);
 
 	// setup spacebrew
-	sb = new Spacebrew.Client();  // create spacebrew client object
+	sb = new Spacebrew.Client("spacebrew.robotconscience.com");  // create spacebrew client object
 
 	sb.name(app_name);
 

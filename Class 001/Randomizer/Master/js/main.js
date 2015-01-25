@@ -30,7 +30,9 @@ function setup(){
 	}
 
 	// setup spacebrew
-	sb = new Spacebrew.Client();  // create spacebrew client object
+	// 
+	sb = new Spacebrew.Client("spacebrew.robotconscience.com");
+	  // create spacebrew client object
 
 	sb.name("randomizer_master");
 
