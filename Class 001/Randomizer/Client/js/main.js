@@ -28,6 +28,9 @@ function setup (){
 
 	var b = document.getElementById("submit");
 	b.onmousedown = submitName;
+
+	document.getElementById("input").style.fontSize = window.innerWidth/10 +"px";
+	document.getElementById("container").style.fontSize = window.innerWidth/10 +"px";
 }
 
 var input,
@@ -61,6 +64,8 @@ function onBooleanMessage( name, value){
 	window.clearInterval(interval);
 	window.clearTimeout(timeout);
 	if ( value == true ){
+		document.getElementById("container").innerHTML = "";
+
 		timeout = setTimeout( function(){
 			interval = setInterval(flipBackground, 200);
 		}, 10 + Math.random() * 1000)
@@ -94,8 +99,8 @@ window.onload = function(){
 }
 
 window.onresize = function(){
-	document.getElementById("input").style.fontSize = window.innerHeight/8 +"px";
-	document.getElementById("container").style.fontSize = window.innerHeight/10 +"px";
+	document.getElementById("input").style.fontSize = window.innerWidth/10 +"px";
+	document.getElementById("container").style.fontSize = window.innerWidth/10 +"px";
 }
 
 
