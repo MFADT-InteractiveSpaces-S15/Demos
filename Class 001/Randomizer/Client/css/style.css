@@ -41,6 +41,7 @@ input {
 	align-items: center;
 	align-content: center;
 	text-align: center;
+	padding:0px;
 }
 
 #output {
