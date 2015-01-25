@@ -12,11 +12,9 @@ var classDivs = {};
 var groupsize = 3;
 
 var possible_assignments = [
-	"Strand Books",
 	"Chelsea Market",
 	"Time warner lobby",
 	"Ace Hotel Lobby",
-	"Museum of Natural History - Exterior + Atrium",
 	"NY Public Library",
 	"Lincoln Center Plaza",
 	"High Line Park",
